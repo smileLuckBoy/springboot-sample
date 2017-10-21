@@ -1,12 +1,11 @@
-package com.example.springboot.mapper;
+package com.example.springboot.dao;
 
 import com.example.springboot.entity.Student;
 import com.example.springboot.entity.StudentExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
 
-@Repository
+import java.util.List;
+
 public interface StudentMapper {
     int countByExample(StudentExample example);
 

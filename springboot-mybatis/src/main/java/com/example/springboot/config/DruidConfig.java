@@ -15,12 +15,11 @@ import javax.sql.DataSource;
 
 /**
  * @author wangmin
- * @version OmniPrime.All rights reserved.
- * @Comments
+ * @Comments Druid数据源配置
  * @since 2017/10/17
  */
 @Configuration
-@MapperScan("com.example.springboot.mapper")
+@MapperScan("com.example.springboot.dao")
 @EnableTransactionManagement
 public class DruidConfig {
 

@@ -1,8 +1,8 @@
 package com.example.springboot.service;
 
+import com.example.springboot.dao.StudentMapper;
 import com.example.springboot.entity.Student;
 import com.example.springboot.entity.StudentExample;
-import com.example.springboot.mapper.StudentMapper;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

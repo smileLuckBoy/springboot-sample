@@ -3,6 +3,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 
 <generatorConfiguration>
+    <properties resource="application.properties" />
     <classPathEntry location="D:/maven-repository/repository/mysql/mysql-connector-java/5.1.38/mysql-connector-java-5.1.38.jar"/>
     <context id="mybatis-test" targetRuntime="MyBatis3">
         <commentGenerator>
@@ -10,7 +11,7 @@
             <property name="suppressDate" value="true"/>
         </commentGenerator>
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://172.17.243.158:3306/spider?useUnicode=true&amp;characterEncoding=utf8"
+                        connectionURL="jdbc:mysql://ip:3306/databases?useUnicode=true&amp;characterEncoding=utf8"
                         userId="root" password="123456">
         </jdbcConnection>
 
@@ -23,7 +24,7 @@
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator targetPackage="com.example.springboot.mapper"
+        <javaClientGenerator targetPackage="com.example.springboot.dao"
                              targetProject="src/main/java" type="XMLMAPPER"/>
 
         <table tableName="student" schema="spider" domainObjectName="Student" >

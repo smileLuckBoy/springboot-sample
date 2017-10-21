@@ -4,8 +4,8 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 
-@Data
 @ToString
+@Data
 @Builder
 public class Student {
     private Integer id;
