@@ -23,6 +23,10 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 public class DruidConfig {
 
+    /**
+     * 配置Druid界面信息
+     * @return
+     */
     @Bean
     public ServletRegistrationBean druidServlet() {
         ServletRegistrationBean reg = new ServletRegistrationBean();
@@ -32,6 +36,7 @@ public class DruidConfig {
         reg.addInitParameter("loginPassword", "admin");
         return reg;
     }
+
 
     @Bean
     public FilterRegistrationBean filterRegistrationBean() {
@@ -46,6 +51,10 @@ public class DruidConfig {
     }
 
 
+    /**
+     * 配置Druid数据源
+     * @return
+     */
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource druidDataSource() {
