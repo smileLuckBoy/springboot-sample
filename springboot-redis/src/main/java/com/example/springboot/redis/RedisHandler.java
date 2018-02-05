@@ -47,4 +47,14 @@ public class RedisHandler {
         if (StringUtils.isEmpty(jsonStr)) return null;
         return JSONObject.parseObject(jsonStr, clazz);
     }
+
+    /**
+     * 发布消息
+     * @param topic
+     * @param data
+     */
+    public void publish(String topic, String data) {
+        redisTemplate.convertAndSend(topic, data);
+    }
+
 }
