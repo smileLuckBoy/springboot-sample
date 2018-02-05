@@ -37,5 +37,5 @@ mybatis:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
     lazy-loading-enabled: true
 #  type-aliases-package: com.example.springboot.entity
-  mapper-locations: classpath:dao/**/*.xml
+  mapper-locations: classpath:mapper/**/*.xml
 #    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl

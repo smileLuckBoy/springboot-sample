@@ -9,7 +9,7 @@ CREATE TABLE `student` (
   `sex` int(1) NOT NULL COMMENT '性别',
   `id_card` varchar(20) DEFAULT NULL COMMENT '身份证号码',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 COMMENT='学生信息表';
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='学生信息表';
 
 -- ----------------------------
 -- Records of student
